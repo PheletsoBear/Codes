@@ -1,0 +1,271 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url('Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Italic;
+    src: url('Montserrat-Italic.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Black;
+    src: url('Montserrat-Black.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-weight: normal;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: scroll;
+}
+
+body {
+    overflow: scroll;
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: linear-gradient(purple, purple);
+    background-image: url("background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 5.5rem;
+}
+
+.heading {
+    font: size 15rem;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    margin: 1rem;
+    background: rgba(113, 111, 172, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(113, 111, 172, 0.49);
+    text-align: center;
+    padding: 1rem;
+    height: 100%
+}
+
+.profilePic {
+    height: 100%;
+    width: 90%;
+    margin: 1rem;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1rem rgba(255, 255, 255, .2);
+}
+
+.name {
+    font-size: 3rem;
+    color: #fff;
+    padding: .5rem 0;
+}
+
+.post {
+    font-size: 1.8rem;
+    color: #eee;
+    font-weight: lighter;
+}
+
+header .navbar {
+    padding: 1rem 3rem;
+}
+
+header .navbar ul li {
+    margin: 1re 0;
+    list-style: none;
+}
+
+header .navbar ul li a {
+    display: block;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    margin: 1rem;
+    background: #007fff;
+    border-radius: 10px;
+}
+
+header .navbar ul li a:hover {
+    background: rgba( 255, 255, 255, 0.9);
+    color: #555;
+    transition: none;
+    text-decoration: none;
+}
+
+.btn-hire {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    color: #fff;
+    margin-top: 1rem;
+    cursor: pointer;
+    background: #007fff;
+    border-radius: 10px;
+}
+
+.btn-hire:hover {
+    background: rgba( 255, 255, 255, 0.9);
+    color: #555;
+    transition: 1s linear;
+}
+
+.containers {
+    height: 60rem;
+    background: rgba(113, 111, 172, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(113, 111, 172, 0.49);
+    text-align: center;
+    padding: 1rem;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.card {
+    background: rgba(113, 111, 172, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(113, 111, 172, 0.49);
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    margin: 1rem;
+}
+
+.card li {
+    font-family: Montserrat-Regular;
+    font-size: 15px;
+    line-height: 32px;
+    margin: 0 0 2px;
+    color: #eee;
+}
+
+.home {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    padding-bottom: 10rem;
+}
+
+.home h3 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: #eee;
+}
+
+.home .name span {
+    font: size 4rem;
+    color: #fff;
+}
+
+.home post {
+    padding: 1rem 0;
+}
+
+.home .post span {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.home .share {
+    position: absolute;
+    left: 50%;
+    bottom: 5rem;
+    transform: translateX(-50%);
+    display: flex;
+    border-radius: 1rem;
+    background: rgba(101, 99, 161, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border: 1px solid rgba(113, 111, 172, 0.49);
+    margin-top: 60rem;
+}
+
+.home .share a {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.home .share a:hover {
+    background: rgba( 255, 255, 255, 0.9);
+    color: #555;
+    transition: none;
+    text-decoration: none;
+}
+
+.about {
+    min-height: 100%;
+}
+
+.content p {
+    color: #fff;
+}
+
+.post a {
+    text-decoration: none;
+    color: red;
+    font-size: 2rem;
+}
+
+.post a:hover {
+    color: #fff;
+}
+
+
+/* For devices 400px and larger: */
+
+@media only screen and (min-device-width: 500px) {
+    body {
+        background: linear-gradient(purple, purple);
+        background-image: url('assets/background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
